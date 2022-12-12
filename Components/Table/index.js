@@ -1,16 +1,5 @@
 import React, {useMemo, Fragment} from "react";
 import {useTable, useExpanded, usePagination, useSortBy} from "react-table";
-import {
-    Pagination,
-    PagincationButtonContainer,
-    PaginationButton,
-    PaginationIndex,
-    RightIconSpan,
-    LeftIconSpan,
-    NextButtonIcon,
-    BackButtonIcon,
-} from "./index.style";
-
 
 const TableComponent = ({columns, data, fetchData, pageCount: controlledPageCount, loading, isPaginated = true, ...props}) => {
     const defaultColumn = useMemo(() => ({
